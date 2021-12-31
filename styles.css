@@ -1,0 +1,443 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body
+{
+    font-family: 'Source Code Pro', monospace;
+    background-color: #232323;
+
+}
+header
+{
+    height: 30px;
+    width: 100%;
+    background-color: #111111;
+    padding-top: 25px;
+}
+
+footer
+{
+    clear: both;
+    height: 25%;
+    width: 100%;
+    background-color: #111111;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    margin-top: -7px;
+
+}
+
+/*contact form*/
+
+input[type=text], select, textarea 
+{
+    width: 75%;
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 6px;    
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit]
+{
+    background-color: #4A8082;
+    color: #ffff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    font-family: 'Source Code Pro', monospace;;
+    cursor: pointer;
+}
+#textcolor
+{
+    color: lightblue;
+    font-weight: 800;
+}
+
+/*page specific styles*/
+
+
+#index_page
+{
+    height: 750px;
+    background: white url(images/homepage_std.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+   
+    /*fade in effect*/
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera */
+    -moz-animation: fadein 2s; /* Firefox  */
+     -ms-animation: fadein 2s; /* who still uses internet explorer? */
+      -o-animation: fadein 2s; /*  outdated opera */
+         animation: fadein 2s;
+}
+    @keyframes fadein 
+    {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+    }
+    @-moz-keyframes fadein 
+    {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+    }
+    @-webkit-keyframes fadein 
+    {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+    }
+    @-ms-keyframes fadein 
+    {
+    from { opacity: 0;}
+    to   { opacity: 1;}
+    }
+
+#main_title
+{
+    padding-top: 12em;
+    padding-left: .5em;
+    text-shadow: 1px 1px #232323;
+}
+#bracket
+{
+    padding-left: .5em;
+    color: white;
+    text-shadow: 1px 1px 5px #232323;
+}
+#sub_title
+{
+    padding-left: 2em;
+    color: white;
+    text-shadow: 1px 1px 5px #232323;
+
+    
+}
+#dylan
+{
+    text-shadow: 1px 1px 5px #232323;
+    float: right;
+    margin: 1em;
+    padding-top: 17em;
+}
+
+#social li
+{
+    display: inline-block; /*centers icons for reasons beyond my comprehension*/
+    list-style-type: none;
+
+}
+#social img
+{
+    float: left;
+    margin-top: .5em;
+    margin: 0 3em 0 0em;
+    padding-top: .5em;
+}
+#skills
+{
+    background-color: #232323;
+    height: 750px;
+    overflow-y: scroll;  
+}
+#skills_description, #info_page p, ul, #contact_form form
+{
+    margin: .5em;
+    color: white;
+    line-height: 1.5em;
+    list-style-type: none;
+
+}
+#skills h2
+{
+    margin: .5em 0 .5em 0;
+    
+}
+#language_icons, #design_icons, #samples
+{
+    
+    padding: .5em;
+    text-align: center;
+}
+#language_icons img, #design_icons img 
+{
+    margin: 3em;
+}
+#info_page
+{
+
+    height: 750px;
+    background-image: url(images/keeb.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+#info_page h2, #contact_form h2, #contact_form label 
+{
+    margin: .1em 0 .1em .3em;
+}
+#contact_form
+{
+
+    height: 100%;
+    width: 100%;
+    background: url(images/keeb2.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+/*general styles*/
+
+#container
+{
+    height: 100%;
+    width: 100%;
+    min-width: 380px;
+    margin: 0 auto;
+}
+h1#header
+{
+    width: 100%;
+    height: 100px;
+    background: url(images/textlogo.png) no-repeat;
+    margin: 0 auto;
+    text-indent: -9999px; /*image replacement*/
+
+}
+#nav
+{
+    list-style-type: none;
+    margin-top: -7em;
+}
+
+#nav img
+{
+    float: right;
+    margin: 0 3em 0 0em;
+}
+
+/*link function*/
+
+a:link
+{
+    color: inherit;
+}
+a:visited
+{
+    opacity: .10; /*this doesn't work and I don't know why*/
+}
+a:hover
+{
+    opacity: .5;
+}
+a:active
+{
+    opacity: 1;
+}
+
+/*media quieries*/
+
+@media screen and (max-width: 380px) /*smallest possible screen*/
+{
+    #index_page
+    {
+        height: 820px;
+        background: white url(images/homepage_small.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    h1#header
+    {
+        width: 100%;
+        height: 100px;
+        background: url(images/textlogosmallest.png) no-repeat;
+        margin: 0 auto;
+        text-indent: -9999px; /*image replacement*/
+    }
+    #nav
+    {
+        list-style-type: none;
+        margin-top: -7em;
+    }
+
+    #nav img
+    {   
+        
+        float: right;
+        margin: 0 1em 0 1em;
+    }
+    footer
+    {
+        height: 102px;
+        width: 100%;
+        background-color: #111111;
+        color: white;
+        font-size: smaller;
+        text-align: center;
+    }
+    #Dylan
+    {
+        text-shadow: 1px 1px 5px #232323;
+        float: right;
+        margin: 1em;
+        padding-top: 13em;
+    }
+}
+@media screen and (min-width: 381px) and (max-width: 480px) /*phone styles*/
+{
+    #index_page
+    {
+        height: 785px;
+        background: white url(images/homepage_small.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    h1#header
+    {
+        width: 100%;
+        height: 100px;
+        background: url(images/textlogomobile.png) no-repeat;
+        margin: 0 auto;
+        text-indent: -9999px; /*image replacement*/
+    }
+    #nav
+    {
+        list-style-type: none;
+        margin-top: -7em;
+    }
+
+    #nav img
+    {   
+        
+        float: right;
+        margin: 0 1em 0 1em;
+    }
+    footer
+    {
+        height: 110px;
+        width: 100%;
+        background-color: #111111;
+        color: white;
+        font-size: smaller;
+        text-align: center;
+    }
+    
+    #Dylan
+    {
+        text-shadow: 1px 1px 5px #232323;
+        float: right;
+        margin: 1em;
+        padding-top: 15em;
+    }
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 600px) /*small tablet styles*/
+{
+    #index_page
+    {
+        height: 785px;
+        background: white url(images/homepage_std.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    h1#header
+    {
+        width: 100%;
+        height: 100px;
+        background: url(images/textlogotablet.png) no-repeat;
+        margin: 0 auto;
+        text-indent: -9999px; /*image replacement*/
+    }
+    #nav
+    {
+        list-style-type: none;
+        margin-top: -7em;
+    }
+
+    #nav img
+    {   
+        
+        float: right;
+        margin: 0 1em 0 1em;
+    }
+    footer
+    {
+        height: 90px;
+        width: 100%;
+        background-color: #111111;
+        color: white;
+        font-size: smaller;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) /*tablet styles*/
+{
+    #index_page
+    {
+        height: 100vh;
+        background: white url(images/homepage_std.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+    h1#header
+    {
+        width: 100%;
+        height: 100px;
+        background: url(images/textlogotablet.png) no-repeat;
+        margin: 0 auto;
+        text-indent: -9999px; /*image replacement*/
+    }
+    #nav
+    {
+        list-style-type: none;
+        margin-top: -7em;
+    }
+
+    #nav img
+    {
+        
+        float: right;
+        margin: 0 3em 0 2em;
+    }
+    footer
+    {
+        height: 90px;
+        width: 100%;
+        background-color: #111111;
+        color: white;
+        font-size: smaller;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 960px)
+{
+    #index_page
+    {
+        height: 100vh;
+        background: white url(images/homepage_large.jpg) no-repeat center center fixed;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+    }
+}
+
+    
